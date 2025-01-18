@@ -362,21 +362,21 @@ export const SOCIALS = [
   {
     name: "YouTube",
     icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
+    link: "https://www.youtube.com/@alokgtaff78",
   },
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/in/alok-pratap-jadon-3b9310273/",
   },
   {
     name: "Twitter",
     icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
+    link: "https://x.com/alokthakur__?s=11",
   },
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/alokpratapjadon",
   },
 ] as const;
