@@ -1,5 +1,7 @@
-// Text Variant motion
-export const textVariant = (delay?: number) => {
+import type { TMotion } from "../types";
+import { Variants } from "framer-motion";
+
+export const textVariant = () => {
   return {
     hidden: {
       y: -50,
@@ -11,19 +13,17 @@ export const textVariant = (delay?: number) => {
       transition: {
         type: "spring",
         duration: 1.25,
-        delay: delay,
       },
     },
   };
 };
 
-// FadeIn motion
 export const fadeIn = (
-  direction: "left" | "right" | "up" | "down" | string,
-  type: string,
-  delay: number,
-  duration: number,
-) => {
+  direction: TMotion["direction"],
+  type: TMotion["type"],
+  delay: TMotion["delay"],
+  duration: TMotion["duration"]
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -35,17 +35,19 @@ export const fadeIn = (
       y: 0,
       opacity: 1,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type,
+        delay,
+        duration,
         ease: "easeOut",
       },
     },
   };
 };
 
-// zoom in motion
-export const zoomIn = (delay: number, duration: number) => {
+export const zoomIn = (
+  delay: TMotion["delay"],
+  duration: TMotion["duration"]
+) => {
   return {
     hidden: {
       scale: 0,
@@ -56,20 +58,19 @@ export const zoomIn = (delay: number, duration: number) => {
       opacity: 1,
       transition: {
         type: "tween",
-        delay: delay,
-        duration: duration,
+        delay,
+        duration,
         ease: "easeOut",
       },
     },
   };
 };
 
-// slide in motion
 export const slideIn = (
-  direction: "left" | "right" | "up" | "down" | string,
-  type: string,
-  delay: number,
-  duration: number,
+  direction: TMotion["direction"],
+  type: TMotion["type"],
+  delay: TMotion["delay"],
+  duration: TMotion["duration"]
 ) => {
   return {
     hidden: {
@@ -80,26 +81,10 @@ export const slideIn = (
       x: 0,
       y: 0,
       transition: {
-        type: type,
-        delay: delay,
-        duration: duration,
+        type,
+        delay,
+        duration,
         ease: "easeOut",
-      },
-    },
-  };
-};
-
-// staggered container motion
-export const staggerContainer = (
-  staggerChildren?: number,
-  delayChildren?: number,
-) => {
-  return {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0,
       },
     },
   };

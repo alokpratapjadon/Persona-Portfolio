@@ -7,16 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# TS Build Info
-tsconfig.tsbuildinfo
-
 node_modules
 dist
 dist-ssr
 *.local
-
-# Environment Variables
-.env
 
 # Editor directories and files
 .vscode/*
@@ -29,5 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# Local Netlify folder
-.netlify
+# git
+.git
+
+# env
+.env
+

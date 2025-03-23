@@ -1,5 +1,7 @@
-import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+import MyResume from "./components/sections/Resume";
+
 import {
   About,
   Contact,
@@ -10,34 +12,35 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Resume, // Import the Resume component
 } from "./components";
-import Banner from "./components/banner";
-import Footer from "./components/footer";
+import { config } from "./constants/config";
 
-// App
 const App = () => {
-  const [hide, setHide] = useState(true);
+  useEffect(() => {
+    if (document.title !== config.html.title) {
+      document.title = config.html.title;
+    }
+  }, []);
 
   return (
     <BrowserRouter>
-      <Banner hide={hide} setHide={setHide} />
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar hide={hide} />
+      <div className="bg-primary relative z-0">
+        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+          <Navbar />
           <Hero />
+          
         </div>
         <About />
         <Experience />
+        <MyResume /> {/* New Resume section added here */}
         <Tech />
         <Works />
         <Feedbacks />
-
-        {/* Contact */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
-        <Footer />
       </div>
     </BrowserRouter>
   );

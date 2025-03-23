@@ -1,32 +1,32 @@
-// Contains components to be exported in other files
-// ! Don't remove anything from here
-
-import { About } from "./about";
+// @ts-nocheck
 import {
+  EarthCanvas,
   BallCanvas,
   ComputersCanvas,
-  EarthCanvas,
   StarsCanvas,
 } from "./canvas";
-import { Contact } from "./contact";
-import { Experience } from "./experience";
-import { Feedbacks } from "./feedbacks";
-import { Hero } from "./hero";
-import { Navbar } from "./navbar";
-import { Tech } from "./tech";
-import { Works } from "./works";
+import Hero from "./sections/Hero";
+import Navbar from "./layout/Navbar";
+import About from "./sections/About";
+import Tech from "./sections/Tech";
+import Experience from "./sections/Experience";
+import Works from "./sections/Works";
+import Feedbacks from "./sections/Feedbacks";
+import Contact from "./sections/Contact";
+import CanvasLoader from "./layout/Loader";
 
 export {
-  About,
-  BallCanvas,
-  ComputersCanvas,
-  Contact,
-  EarthCanvas,
-  Experience,
-  Feedbacks,
   Hero,
   Navbar,
-  StarsCanvas,
+  About,
   Tech,
+  Experience,
   Works,
+  Feedbacks,
+  Contact,
+  CanvasLoader,
+  EarthCanvas,
+  BallCanvas,
+  ComputersCanvas,
+  StarsCanvas,
 };

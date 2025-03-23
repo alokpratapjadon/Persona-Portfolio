@@ -1,272 +1,330 @@
-<a name="readme-top"></a>
+# 3D Portfolio
 
-# Modern 3D Portfolio using React, Three.js and Typescript
+<!-- GitHub badges -->
 
-![Modern 3D Portfolio using React, Three.js and Typescript](/.github/images/img_main.png "Modern 3D Portfolio using React, Three.js and Typescript")
+[![Latest release](https://img.shields.io/github/v/release/ladunjexa/reactjs18-3d-portfolio?label=Latest%20release&style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/releases/tag/v0.1.0)
+[![Stars](https://img.shields.io/github/stars/ladunjexa/reactjs18-3d-portfolio?style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/stargazers)
+[![Fork](https://img.shields.io/github/forks/ladunjexa/reactjs18-3d-portfolio?style=social)](https://github.com/ladunjexa/reactjs18-3d-portfolio/forks)
+[![GitHub commits](https://img.shields.io/github/commit-activity/t/ladunjexa/reactjs18-3d-portfolio?style=social&logo=github)](https://github.com/ladunjexa/reactjs18-3d-portfolio/commits)
+[![Pull requests](https://img.shields.io/github/issues-pr/ladunjexa/reactjs18-3d-portfolio?style=social&logo=github)](https://github.com/ladunjexa/reactjs18-3d-portfolio/pulls)
 
-[![Ask Me Anything!](https://flat.badgen.net/static/Ask%20me/anything?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy "Ask Me Anything!")
-[![GitHub license](https://flat.badgen.net/github/license/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/blob/main/LICENSE "GitHub license")
-[![Maintenance](https://flat.badgen.net/static/Maintained/yes?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/commits/main "Maintenance")
-[![GitHub branches](https://flat.badgen.net/github/branches/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/branches "GitHub branches")
-[![Github commits](https://flat.badgen.net/github/commits/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/commits "Github commits")
-[![GitHub issues](https://flat.badgen.net/github/issues/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/issues "GitHub issues")
-[![GitHub pull requests](https://flat.badgen.net/github/prs/sanidhyy/3d-portfolio?icon=github&color=black&scale=1.01)](https://github.com/sanidhyy/3d-portfolio/pulls "GitHub pull requests")
-[![Netlify status](https://api.netlify.com/api/v1/badges/5c77ba92-e2f5-468e-99f1-3543906a90cb/deploy-status)](https://shubam.netlify.app/ "Netlify status")
+![demo](.github/README_ASSETS/3d-portfolio.png)
 
-<!-- Table of Contents -->
-<details>
+[![ladunjexa](https://custom-icon-badges.demolab.com/badge/made%20by%20-ladunjexa-556bf2?logo=github&logoColor=white&labelColor=101827)](https://github.com/luadnjexa)
+[![License](https://img.shields.io/github/license/ladunjexa/reactjs18-3d-portfolio?color=dddddd&labelColor=000000)](https://github.com/ladunjexa/reactjs18-3d-portfolio/blob/main/LICENSE)
+[![Top Language](https://img.shields.io/github/languages/top/ladunjexa/reactjs18-3d-portfolio?logo=github&logoColor=%23007ACC&label=TypeScript)](https://www.typescriptlang.org/)
+[![Contributors](https://img.shields.io/github/contributors/ladunjexa/reactjs18-3d-portfolio?style=flat&color=orange&label=Contributors)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
+![Release](https://img.shields.io/github/release/ladunjexa/reactjs18-3d-portfolio.svg)
+![PRs](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=shields)
+![deployment](https://img.shields.io/github/deployments/ladunjexa/reactjs18-3d-portfolio/Production?logo=vercel&label=Website)
+[![Known Vulnerabilities](https://snyk.io/test/github/ladunjexa/reactjs18-3d-portfolio/badge.svg)](https://snyk.io/test/github/ladunjexa/reactjs18-3d-portfolio)
 
-<summary>
+## 🌐 Live Demo
 
-# :notebook_with_decorative_cover: Table of Contents
+Explore the live demonstration of the project:
+[reactjs18-3d-portfolio](https://reactjs18-3-d-portfolio.vercel.app/)
 
-</summary>
+## 📝 Description
 
-- [Folder Structure](#bangbang-folder-structure)
-- [Getting Started](#toolbox-getting-started)
-- [Screenshots](#camera-screenshots)
-- [Tech Stack](#gear-tech-stack)
-- [Stats](#wrench-stats)
-- [Contribute](#raised_hands-contribute)
-- [Acknowledgements](#gem-acknowledgements)
-- [Buy Me a Coffee](#coffee-buy-me-a-coffee)
-- [Follow Me](#rocket-follow-me)
-- [Learn More](#books-learn-more)
-- [Deploy on Netlify](#page_with_curl-deploy-on-netlify)
-- [Give A Star](#star-give-a-star)
-- [Star History](#star2-star-history)
-- [Give A Star](#star-give-a-star)
+**3D Portfolio** is a well-designed and fully functional portfolio website that is built with
+React.js and Three.js. It is a fully responsive website that works well on all devices.
+
+<details><summary><b>Folder Structure</b></summary>
+
+```bash
+reactjs18-3d-portfolio/
+├── src/
+├   ├── App.tsx
+├   ├── globals.css
+├   ├── main.tsx
+├   ├── vite.env.d.ts
+├   ├── components/
+├   ├   ├── atoms/
+├   ├   ├   └── Header.tsx
+├   ├   ├── canvas/
+├   ├   ├   ├── Ball.tsx
+├   ├   ├   ├── Computers.tsx
+├   ├   ├   ├── Earth.tsx
+├   ├   ├   ├── Stars.tsx
+├   ├   ├   └── index.ts
+├   ├   ├── layout/
+├   ├   ├   ├── Loader.tsx
+├   ├   ├   └── Navbar.tsx
+├   ├   ├── sections/
+├   ├   ├   ├── About.tsx
+├   ├   ├   ├── Contact.tsx
+├   ├   ├   ├── Experience.tsx
+├   ├   ├   ├── Feedbacks.tsx
+├   ├   ├   ├── Hero.tsx
+├   ├   ├   ├── Tech.tsx
+├   ├   ├   ├── Works.tsx
+├   ├   ├   └── page.tsx
+├   ├   └── index.ts
+├   ├── constants/
+├   ├   ├── config.ts
+├   ├   ├── styles.ts
+├   ├   └── index.ts
+├   ├── hoc/
+├   ├   ├── SectionWrapper.tsx
+├   ├   └── index.ts
+├   ├── utils/
+├   ├   └── motion.ts
+├   ├── types/
+├   ├   └── index.d.ts
+├   └── assets/
+├       ├── company/
+├       ├   └── [[...]].{svg,png}
+├       ├── tech/
+├       ├   └── [[...]].{svg,png}
+├       ├── [[...]].{svg,png}
+├       └── index.ts
+├── public/
+├   ├── desktop_pc
+├   ├   ├── textures/[[...]].png
+├   ├   ├── license.txt
+├   ├   ├── scene.bin
+├   ├   └── scene.gltf
+├   ├── planet
+├   ├   ├── textures/[[...]].png
+├   ├   ├── license.txt
+├   ├   ├── scene.bin
+├   ├   └── scene.gltf
+├   ├── logo.png
+├   └── logo.svg
+├── .env
+├── .eslintignore
+├── .eslintrc.cjs
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.cjs
+├── index.html
+├── LICENSE
+├── README.md
+├── package.json
+├── postcss.config.cjs
+├── tailwind.config.cjs
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.js
+```
 
 </details>
 
-## :bangbang: Folder Structure
+## 📖 Table of Contents
 
-Here is the folder structure of this app.
+<details><summary>Table of Contents</summary>
+
+- [Live Demo](#-live-demo)
+- [Description](#-description)
+- [Technologies Used](#-technologies-used)
+- [Get Started](#-get-started)
+  - [Prerequisites](#-prerequisites)
+  - [Installation and Run Locally](#-installation-and-run-locally)
+  - [Scripts](#-scripts)
+- [Environment Variables](#-environment-variables)
+- [Deployment](#-deployment)
+  - [Deploy to production (manual)](#-deploy-to-production-manual)
+  - [Deploy on Vercel (recommended)](#-deploy-on-vercel-recommended)
+  - [Deploy on Netlify](#-deploy-on-netlify)
+- [Contributing](#-contributing)
+  - [Bug / Feature Request](#-bug--feature-request)
+- [Acknowledgements](#-acknowledgements)
+- [References](#-references)
+- [Contact Us](#-contact-us)
+- [License](#-license)
+
+</details>
+
+## ✨ Technologies Used
+
+<details><summary><b>3D Portfolio</b> is built using the following technologies:</summary>
+
+- [TypeScript](https://www.typescriptlang.org/): TypeScript is a typed superset of JavaScript that
+  compiles to plain JavaScript.
+- [Vite](https://vitejs.dev/): Vite is a build tool that aims to provide a faster and leaner
+  development experience for modern web projects.
+- [React.js](https://reactjs.org/): React is a free and open-source front-end JavaScript library for
+  building user interfaces or UI components.
+- [Three.js](https://threejs.org/): Three.js is a cross-browser JavaScript library and application
+  programming interface used to create and display animated 3D computer graphics in a web browser
+  using WebGL.
+- [Framer Motion](https://www.framer.com/motion/): Framer Motion is a production-ready motion
+  library for React.
+- [Tailwind CSS](https://tailwindcss.com/): Tailwind CSS is a utility-first CSS framework for
+  rapidly building custom user interfaces.
+- [ESLint](https://eslint.org/): ESLint is a static code analysis tool for identifying problematic
+  patterns found in JavaScript code.
+- [Prettier](https://prettier.io/): Prettier is an opinionated code formatter.
+- [Vercel](https://vercel.com/): Vercel is a cloud platform for frontend developers, providing the
+  frameworks, workflows, and infrastructure to build a faster, more personalized Web.
+
+</details><br/>
+
+[![Technologies Used](https://skillicons.dev/icons?i=ts,vite,react,threejs,tailwind,vercel)](https://skillicons.dev)
+
+## 🧰 Get Started
+
+To get this project up and running in your development environment, follow these step-by-step
+instructions.
+
+### 📋 Prerequisites
+
+In order to install and run this project locally, you would need to have the following installed on
+your local machine.
+
+- [Node.js](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/get-npm)
+- [Git](https://git-scm.com/downloads)
+
+### ⚙️ Installation and Run Locally
+
+**Step 0:**
+
+Note :bangbang: the application uses EmailJS in order to send emails using client-side, therefore,
+you need to create EmailJS account [here](https://emailjs.com/) and sets the
+`VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, and `VITE_EMAIL_JS_ACCESS_TOKEN` environment
+variables in `.env` file.
+
+**Step 1:**
+
+Download or clone this repo by using the link below:
 
 ```bash
-3d-portfolio/
-  |- public/
-    |-- desktop_pc/
-    |-- planet/
-    |-- apple-touch-icon.png
-    |-- favicon.ico
-    |-- favicon16.png
-    |-- favicon32.png
-  |- src/
-    |-- assets/
-        |--- company/
-        |--- projects/
-        |--- socials/
-        |--- tech/
-        |--- testimonials/
-        |--- index.ts
-    |-- components/
-        |--- canvas/
-        |--- about.tsx
-        |--- banner.tsx
-        |--- contact.tsx
-        |--- experience.tsx
-        |--- feedbacks.tsx
-        |--- footer.tsx
-        |--- hero.tsx
-        |--- index.ts
-        |--- loader.tsx
-        |--- navbar.tsx
-        |--- tech.tsx
-        |--- works.tsx
-    |-- constants/
-        |--- index.ts
-    |-- hoc/
-        |--- index.ts
-        |--- section-wrapper.tsx
-    |-- utils/
-        |--- lib.ts
-        |--- motion.ts
-    |-- app.tsx
-    |-- env.d.ts
-    |-- index.css
-    |-- main.tsx
-    |-- styles.ts
-  |- .env
-  |- .env.example
-  |- .gitignore
-  |- index.html
-  |- package-lock.json
-  |- package.json
-  |- postcss.config.cjs
-  |- tailwind.config.ts
-  |- tsconfig.json
-  |- vite.config.ts
+git clone https://github.com/ladunjexa/reactjs18-3d-portfolio.git
 ```
 
-<br />
+**Step 2:**
 
-## :toolbox: Getting Started
+Execute the following command in the root directory of the downloaded repo in order to install
+dependencies:
 
-1. Make sure **Git** and **NodeJS** is installed.
-2. Clone this repository to your local computer.
-3. Create `.env` file in **root** directory.
-4. Contents of `.env`:
+```bash
+npm install
+```
+
+**Step 3:**
+
+Execute the following command in order to run the development server locally:
+
+```bash
+npm run dev
+```
+
+**Step 4:**
+
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+### 📜 Scripts
+
+All scripts are defined in the `package.json` file. Here is a list of all scripts:
+
+| Script             | Action                                      |
+| :----------------- | :------------------------------------------ |
+| `npm install`      | Installs dependencies                       |
+| `npm run dev`      | Starts local dev server at `localhost:5137` |
+| `npm run build`    | Build your production site to `./dist/`     |
+| `npm run preview`  | Boot up a local static web server           |
+| `npm run lint`     | Run ESLint                                  |
+| `npm run ts:check` | Perform type-checking                       |
+
+## 🔒 Environment Variables
+
+Environment variables[^3] can be used for configuration. They must be set before running the app.
+
+> [Environment variables](https://en.wikipedia.org/wiki/Environment_variable) are variables that are
+> set in the operating system or shell, typically used to configure programs.
+
+**React.js 18 3D Portfolio** uses [EmailJS](https://www.emailjs.com/) as external service. You need
+to create an account and get the required credentials to run the app.
+
+Create a `.env` file in the root directory of the project and add the following environment
+variables:
 
 ```env
-# .env
-
-# email js configuration
-VITE_APP_SERVICE_ID=XXXXXXXXXXXXXXXX
-VITE_APP_TEMPLATE_ID=XXXXXXXXXXXXXXXX
-VITE_APP_EMAILJS_KEY=XXXXXXXXXXXXXXXX
-VITE_APP_EMAILJS_RECIEVER=your@email.com
+VITE_EMAILJS_SERVICE_ID=<VITE_EMAILJS_SERVICE_ID>
+VITE_EMAILJS_TEMPLATE_ID=<VITE_EMAILJS_TEMPLATE_ID>
+VITE_EMAIL_JS_ACCESS_TOKEN=<VITE_EMAIL_JS_ACCESS_TOKEN>
 ```
 
-5. ### Service ID (Replace VITE_APP_SERVICE_ID):
+## 🚀 Deployment
 
-- Visit the website where you are obtaining the service ID.
-- Log in to your account or sign up if needed.
-- Navigate to the section related to API keys or services.
-- Find and copy the Service ID associated with your account.
+#### Deploy to production (manual)
 
-6. ### Template ID (Replace VITE_APP_TEMPLATE_ID):
+You can create an optimized production build with the following command:
 
-- Visit [EmailJS](https://emailjs.com "EmailJS") Website.
-- Log in to your account or sign up if necessary.
-- Access the section for email templates or integration.
-- Locate the template you want to use and copy its Template ID.
+```bash
+npm run build
+```
 
-7. ### EmailJS Public Key (Replace VITE_APP_EMAILJS_KEY):
+#### Deploy on Vercel (recommended)
 
-- Go to the EmailJS website.
-- Log in to your account or create one if you haven't.
-- Navigate to the dashboard or settings page.
-- Look for API keys or integration settings.
-- Copy the Public Key associated with your account.
+The easiest way to deploy this Next.js app is to use the
+[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
 
-![Copy public key](/.github/images/step_emailjs.png "Copy public key")
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fladunjexa%2Freactjs18-3d-portfolio)
 
-8. ### EmailJS Receiver (Replace VITE_APP_EMAILJS_RECIEVER):
+#### Deploy on Netlify
 
-- Choose the email address where you want to receive emails.
-- If needed, create an email address or use an existing one.
-- Ensure that the chosen email address is accessible and ready to receive emails.
+You can also deploy this Next.js app with [Netlify](https://www.netlify.com/).
 
-9. Open terminal in root directory. Run `npm install --legacy-peer-deps` or `yarn install --legacy-peer-deps`.
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ladunjexa/reactjs18-3d-portfolio)
 
-10. Now app is fully configured 👍 and you can start using this app using either one of `npm run dev` or `yarn dev`.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-**NOTE:** Please make sure to keep your API keys and configuration values secure and do not expose them publicly.
+## 🔧 Contributing
 
-## :camera: Screenshots:
+[![contributors](https://contrib.rocks/image?repo=ladunjexa/reactjs18-3d-portfolio)](https://github.com/ladunjexa/reactjs18-3d-portfolio/graphs/contributors)
 
-![Showcase your skills](/.github/images/img1.png "Showcase your skills")
+Contributions are what make the open source community such an amazing place to learn, inspire, and
+create. Any contributions you make are **greatly appreciated**.
 
-![Showcase your projects](/.github/images/img2.png "Showcase your projects")
+To fix a bug or enhance an existing module, follow these steps:
 
-![Modern UI/UX](/.github/images/img3.png "Modern UI/UX")
+1. Fork the repo
+2. Create a new branch (`git checkout -b improve-feature`)
+3. Make the appropriate changes in the files
+4. Commit your changes (`git commit -am 'Improve feature'`)
+5. Push to the branch (`git push origin improve-feature`)
+6. Create a Pull Request 🎉
 
-![Functional Contact form](/.github/images/img4.png "Functional Contact form")
+### 📩 Bug / Feature Request
 
-## :gear: Tech Stack
+If you find a bug (failure of a module to execute its intended function), kindly open an issue
+[here](https://github.com/ladunjexa/reactjs18-3d-portfolio/issues/new) by including the issue with a
+title and clear description.
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Vite JS](https://skillicons.dev/icons?i=vite "Vite JS")](https://vitejs.dev/ "Vite JS") [![Typescript](https://skillicons.dev/icons?i=ts "Typescript")](https://www.typescriptlang.org/ "Typescript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
+If you'd like to request a new function, feel free to do so by opening an issue
+[here](https://github.com/ladunjexa/reactjs18-3d-portfolio/issues/new). Please include sample
+queries and their corresponding results.
 
-## :wrench: Stats
+## 💎 Acknowledgements
 
-[![Stats for 3D Portfolio](/.github/images/stats.svg "Stats for 3D Portfolio")](https://pagespeed.web.dev/analysis?url=https://shubam.netlify.app/ "Stats for 3D Portfolio")
+I'd like to express my gratitude to the following people who helped me with this project and made it
+possible:
 
-## :raised_hands: Contribute
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Three.js](https://threejs.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Vertical Timeline Component](https://www.npmjs.com/package/react-vertical-timeline-component)
+- [React Parallax Tilt](https://www.npmjs.com/package/react-parallax-tilt)
+- [Maath](https://www.npmjs.com/package/maath)
+- [EmailJS](https://www.emailjs.com/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Vercel](https://vercel.com/)
+- [JavaScript Mastery](https://www.jsmastery.pro/)
 
-You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
+## 📞 Contact Us
 
-## :gem: Acknowledgements
+[![Telegram](https://img.shields.io/badge/Telegram-@ladunjexa-2CA5E0?style=social&logo=telegram&logoColor=000000)](https://t.me/ladunjexa)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ladunjexa-blue?style=flat&logo=linkedin&logoColor=b0c0c0&labelColor=363D44)](https://www.linkedin.com/in/lironabutbul)
+[![Instagram](https://img.shields.io/badge/Instagram-ladunjexa-grey?style=flat&logo=instagram&logoColor=b0c0c0&labelColor=8134af)](https://www.instagram.com/ladunjexa)
+[![Discord](https://img.shields.io/badge/Discord-ladunjexa-7289da?style=flat&logo=discord&logoColor=b0c0c0&labelColor=2c2f33)](https://discord.com/users/827996364331810816)
 
-Useful resources and dependencies that are used in 3D Portfolio.
+<!-- [![Twitter](https://img.shields.io/twitter/follow/ladunjexa.svg?style=social)](https://twitter.com/intent/follow?screen_name=ladunjexa) -->
 
-- [@emailjs/browser](https://www.npmjs.com/package/@emailjs/browser): ^3.11.0
-- [@react-three/drei](https://www.npmjs.com/package/@react-three/drei): ^9.96.1
-- [@react-three/fiber](https://www.npmjs.com/package/@react-three/fiber): ^8.13.4
-- [clsx](https://www.npmjs.com/package/clsx): ^2.1.0
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.12.18
-- [maath](https://www.npmjs.com/package/maath): ^0.10.7
-- [react](https://www.npmjs.com/package/react): ^18.2.0
-- [react-dom](https://www.npmjs.com/package/react-dom): ^18.2.0
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom): ^6.21.3
-- [react-tilt](https://www.npmjs.com/package/react-tilt): ^1.0.2
-- [react-vertical-timeline-component](https://www.npmjs.com/package/react-vertical-timeline-component): ^3.6.0
-- [sonner](https://www.npmjs.com/package/sonner): ^1.3.1
-- [tailwind-merge](https://www.npmjs.com/package/tailwind-merge): ^2.2.1
-- [three](https://www.npmjs.com/package/three): ^0.160.1
-- [@types/react](https://www.npmjs.com/package/@types/react): ^18.2.48
-- [@types/react-dom](https://www.npmjs.com/package/@types/react-dom): ^18.2.18
-- [@types/react-vertical-timeline-component](https://www.npmjs.com/package/@types/react-vertical-timeline-component): ^3.3.6
-- [@types/tailwindcss](https://www.npmjs.com/package/@types/tailwindcss): ^3.1.0
-- [@vitejs/plugin-react](https://www.npmjs.com/package/@vitejs/plugin-react): ^4.0.3
-- [autoprefixer](https://www.npmjs.com/package/autoprefixer): ^10.4.17
-- [postcss](https://www.npmjs.com/package/postcss): ^8.4.31
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^3.3.3
-- [typescript](https://www.npmjs.com/package/typescript): ^5.3.3
-- [vite](https://www.npmjs.com/package/vite): ^5.0.12
+## 📋 License
 
-## :coffee: Buy Me a Coffee
-
-[<img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" width="200" />](https://www.buymeacoffee.com/sanidhy "Buy me a Coffee")
-
-## :rocket: Follow Me
-
-[![GitHub followers](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/sanidhyy "Follow Me")
-[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Check+out+this+amazing+app:&url=https%3A%2F%2Fgithub.com%2Fsanidhyy%2F3d-portfolio "Tweet")
-[![YouTube](https://img.shields.io/youtube/channel/subscribers/UCNAz_hUVBG2ZUN8TVm0bmYw)](https://www.youtube.com/@OPGAMER. "Subscribe my YouTube Channel")
-
-## :books: Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-## :page_with_curl: Deploy on Netlify
-
-The easiest way to deploy your Vite.js app is to use the [Netlify Platform](https://netlify.app).
-
-Check out [Vite.js deployment documentation](https://vitejs.dev/guide/static-deploy) for more details.
-
-## :star: Give A Star
-
-You can also give this repository a star to show more people and they can use this repository.
-
-## :star2: Star History
-
-<a href="https://star-history.com/#sanidhyy/3d-portfolio&Timeline">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=sanidhyy/3d-portfolio&type=Timeline&theme=dark" />
-  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=sanidhyy/3d-portfolio&type=Timeline" />
-  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=sanidhyy/3d-portfolio&type=Timeline" />
-</picture>
-</a>
-
-<br />
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-#   P e r s o n a - P o r t f o l i o  
- #   P e r s o n a - P o r t f o l i o  
- 
+**Three.js 3D Portfolio** is open source software
+[licensed as MIT](https://opensource.org/license/mit/) and is free to use — See
+[LICENSE](https://github.com/ladunjexa/reactjs18-3d-portfolio/blob/main/LICENSE) for more details.

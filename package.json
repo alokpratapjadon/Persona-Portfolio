@@ -1,78 +1,44 @@
 {
-  "name": "3d-portfolio",
-  "version": "1.1.4",
+  "name": "threejs-3d-portfolio",
   "private": true,
-  "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhya.verma12345@gmail.com",
-    "url": "https://github.com/sanidhyy"
-  },
-  "description": "Modern 3D Portfolio using React, Three.js and Typescript",
-  "keywords": [
-    "reactjs",
-    "react",
-    "porfolio-app",
-    "three-js",
-    "modern-ui/ux",
-    "js",
-    "javascript",
-    "html",
-    "css",
-    "tailwindcss"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sanidhyy/3d-portfolio.git"
-  },
-  "homepage": "https://github.com/sanidhyy/3d-portfolio#readme",
-  "bugs": {
-    "url": "https://github.com/sanidhyy/3d-portfolio/issues",
-    "email": "sanidhya.verma12345@gmail.com"
-  },
-  "funding": [
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/sanidhy"
-    },
-    {
-      "type": "Buy me a coffee",
-      "url": "https://www.buymeacoffee.com/sanidhy"
-    }
-  ],
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "check-types": "tsc --noEmit"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "ts:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@react-three/fiber": "^8.17.10",
-    "@react-three/drei": "^9.120.5",
-    "clsx": "^2.1.1",
-    "framer-motion": "^11.16.0",
-    "maath": "^0.10.8",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.1.1",
-    "react-tilt": "^1.0.2",
+    "@emailjs/browser": "^3.12.1",
+    "@react-three/drei": "^9.99.4",
+    "@react-three/fiber": "^8.15.16",
+    "framer-motion": "^9.0.7",
+    "maath": "^0.10.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-parallax-tilt": "^1.7.212",
+    "react-router-dom": "^6.22.1",
     "react-vertical-timeline-component": "^3.6.0",
-    "sonner": "^1.7.1",
-    "tailwind-merge": "^2.6.0",
-    "three": "^0.172.0"
+    "three": "^0.161.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
     "@types/react-vertical-timeline-component": "^3.3.6",
-    "@types/tailwindcss": "^3.1.0",
-    "@vitejs/plugin-react": "^4.3.4",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
-    "typescript": "^5.7.2",
-    "vite": "^6.0.7"
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.21",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8"
   }
 }
