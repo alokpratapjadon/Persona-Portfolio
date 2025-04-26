@@ -25,7 +25,7 @@ const Resume = () => {
             <div className="bg-[#232631] shadow-xl rounded-2xl p-6 max-w-3xl w-full">
               <h2 className="text-2xl font-semibold text-[#FFf]">Education</h2>
               <p className="text-gray-300 mt-2">B.Tech in Computer Science & Engineering</p>
-              <p className="text-gray-400 text-sm">XYZ University, 2021 - 2025</p>
+              <p className="text-gray-400 text-sm">GLA University, 2022 - 2026</p>
             </div>
 
             <div className="bg-[#232631] shadow-xl rounded-2xl p-6 max-w-3xl w-full mt-6">
@@ -35,8 +35,8 @@ const Resume = () => {
 
             <div className="bg-[#232631] shadow-xl rounded-2xl p-6 max-w-3xl w-full mt-6">
               <h2 className="text-2xl font-semibold text-[#FFf]">Experience</h2>
-              <p className="text-gray-300 mt-2">Software Developer Intern at ABC Corp</p>
-              <p className="text-gray-400 text-sm">Jan 2024 - Present</p>
+              <p className="text-gray-300 mt-2">Software Developer Intern at Mern Corp</p>
+              <p className="text-gray-400 text-sm">Jan 2025 - Present</p>
             </div>
           </div>
 
